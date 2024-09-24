@@ -2,9 +2,11 @@
   "name": "411-discordbot",
   "version": "1.0.0",
   "description": "411夏合宿",
-  "main": "index.js",
+  "main": "./app/index.js",
+  "type": "commonjs",
   "scripts": {
-    "dev": "node app/index.js"
+    "dev": "node app/index.js",
+    "deploy": "node app/deploy-commands.js"
   },
   "keywords": [],
   "author": "",
