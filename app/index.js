@@ -1,13 +1,10 @@
-// discord.jsライブラリの中から必要な設定を呼び出し、変数に保存します
 const { Client, Events, GatewayIntentBits } = require('discord.js');
-
-// 設定ファイルからトークン情報を呼び出し、変数に保存します
 const { token } = require('./config.json');
 
 // コマンド
 const helloCommand = require('./commands/utility/hello.js')
 
-// クライアントインスタンスと呼ばれるオブジェクトを作成します
+// クライアントインスタンスを作成
 const client = new Client({ 
     intents: [GatewayIntentBits.Guilds]
 });
